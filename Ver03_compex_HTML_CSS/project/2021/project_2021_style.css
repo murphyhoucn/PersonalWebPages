@@ -1,0 +1,95 @@
+
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body {
+    /* 这里放入你的背景图片  需要加center*/
+    background: url(../../resource/image/project_background.jpg) center;
+    backdrop-filter: saturate(150%) blur(1px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat:repeat-y;
+}
+
+
+#table_catalog {
+
+    background: rgba(255, 255, 255, 0.6);  /*表格底色*/
+    width: 1000px;
+    margin: 10px auto;
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #000000;
+}
+table {
+    *border-collapse: collapse;  /* 属性设置表格边框合并，而不是像标准HTML表格那样分开 */
+    border-spacing: 0;  /* 属性设置相邻单元格的边框间的距离（仅用于“边框分离”模式),在指定的两个长度值中，第一个是水平间隔，第二个是垂直间隔。 */
+    width: 100%;
+}
+/*========bordered table========*/
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;  /* box-shadow 属性向框添加一个或多个阴影,水平 垂直 阴影迷糊 阴影颜色 text-shdow像文本添加阴影 */
+}
+.bordered tr {
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;  /* all所有属性都将获得过渡效果，完成过渡效果0.1s，ease-in-out规定以慢速开始和结束的过渡效果 */
+}
+.bordered .highlight,  .bordered tr:hover { background: #fbf8e9; }
+.bordered td,  .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;  /* 文本左对齐 */
+}
+.bordered th {
+    background-color: lightcyan;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: linear-gradient(top, #ebf3fc, #dce9f9);
+ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)";
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.bordered td:first-child,  .bordered th:first-child { border-left: none; }
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}

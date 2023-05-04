@@ -1,0 +1,21 @@
+
+
+# Intellij
+*.ipr
+*.iml
+*.iws
+.idea/
+
+
+
+
+# VS
+.vs/
+
+
+
+
+# Log file
+*.log
+log/
+

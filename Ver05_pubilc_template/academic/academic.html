@@ -1,0 +1,175 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="keywords" content="MurphyHou">
+
+<meta name="description" content="Academic homepage of MurphyHou">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="./resources/main.css" media="all" rel="stylesheet">
+
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+
+<title>MurphyHou's Homepage</title>
+
+
+
+</head>
+
+<body>
+
+<table id="tbInformation" width="100%">
+	<tr>
+		<td width="500">
+        <h1>MurphyHou</h1>
+		</td>
+		<td rowspan="3" align="center">
+		<img src="./resources/me_avatar.png" border="0" height="200" class="portrait">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p style="line-height:1.8">
+        Student majoring in EE<br>
+        Ocean University of China<br>
+		Email: <a href="mailto:Murphy0928Hou@outlook.com" target="_blank" title="mail">Murphy0928Hou@outlook.com </a><br>
+		</p>
+	</tr>
+</table>
+
+
+<hr>
+<p align=center>
+[<a href="#Res"  class="STYLE9">BasicInfo</a>] &nbsp
+[<a href="#Edu"  class="STYLE9">Education</a>] &nbsp
+[<a href="#Ach"  class="STYLE9">Achievements</a>]  &nbsp
+[<a href="#Rel"  class="STYLE9">Relevant Links</a>] &nbsp
+</p>
+<hr>
+
+
+<h3><a name="Res"></a>Basic Information</h3>
+
+
+<ul>
+  A boy who is curious about everything.<br>
+  Born in 2000 in Shandong Province, China.<br>
+  Passionate about electronics, computer science and astronomy.<br>
+  Passionate about recording life by taking photos and videos<br>
+  Admitted to university in 2019<br>
+  majoring in EE in Ocean University of China<br>
+</ul>
+
+<hr>
+
+<h3><a name="Edu"></a>Education</h3>
+<ul>
+   <li> 2019.09- &nbsp&nbsp Ocean University of China --Communication Engineering
+</ul>
+
+<hr>
+<h3><a name="Ach"></a>Academic Achievements</h3>
+
+<ul>
+  There is no any academic achievements at the moment.
+</ul>
+
+
+
+
+<hr>
+<h3><a name="Rel"></a>Relvant Links</h3>
+<ul>
+    <a href="https://space.bilibili.com/294812632" target="_blank" title="bilibili"><i class="fa fa-tv" aria-hidden="true"></i></a>
+    &nbsp;    &nbsp;
+
+    <a href="https://gitee.com/murphyhou" target="_blank"  title="gitee"><i class="fa fa-file-code-o" aria-hidden="true"></i> </a>
+    &nbsp;    &nbsp;
+    <a href="https://github.com/MurphyHou0928" target="_blank"title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+    &nbsp;    &nbsp;
+    <a href="mailto:Murphy0928Hou@outlook.com" target="_blank" title="mail"><i class="fa fas fa-envelope" aria-hidden="true"></i></a>
+    &nbsp;    &nbsp;
+</ul>
+
+<hr>
+
+<script 
+  type="text/JavaScript" 
+  language="JavaScript">
+<!-- 
+//
+// format date as dd-mmm-yy
+// example: 12-Jan-99
+//
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getYear();
+
+  // handle different year values 
+  // returned by IE and NS in 
+  // the year 2000.
+  if(y >= 2000)
+  {
+    y -= 2000;
+  }
+  if(y >= 100)
+  {
+    y -= 100;
+  }
+
+  // could use splitString() here 
+  // but the following method is 
+  // more compatible
+  var mmm = 
+    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
+    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
+    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
+    (10==m)?'Oct':(11==m)?'Nov':'Dec';
+
+  return "" +
+    (d<10?"0"+d:d) + "-" +
+    mmm + "-" +
+    (y<10?"0"+y:y);
+}
+
+
+//
+// get last modified date of the 
+// current document.
+//
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  // check if we have a valid date
+  // before proceeding
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+
+//
+// finally display the last modified date
+// as DD-MMM-YY
+//
+document.write( 
+  "This page was updated on " + 
+  date_lastmodified() );
+
+// -->
+</script>
+
+</body>
+
+</html>

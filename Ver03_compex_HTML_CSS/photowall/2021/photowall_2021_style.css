@@ -1,0 +1,55 @@
+/* 该文件是以年为单位的月份的层叠样式表文件*/
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body {
+    /* 这里放入你的背景图片  需要加center*/
+    background: url(../../resource/image/photowall_background.jpg) no-repeat center;
+    backdrop-filter: saturate(130%) blur(2px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat:repeat-y;
+}
+
+
+.sidebar{
+    position:fixed;
+    left:1px;
+	width:175px;
+	border-color: #fffffff;
+}
+.tab{
+	font-size:12px;
+	height:27px;
+	width:175px;
+	background: #eeeeee;
+	line-height: 27px; /*把line-height高度设置和height一样就可以让字体垂直居中*/
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #efefef;
+	border-radius:2px 2px 0px 0px;
+}
+.reorder{
+	margin-left:10px;
+	content: url(../../resource/image/list.ico);
+}
+.navto-nav{
+	font-size:12px;
+	height:45px;
+	width:175px;
+	background: #fbfbfb;
+	line-height: 45px; /*把line-height高度设置和height一样就可以让字体垂直居中*/
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;
+	border-color: #efefef;
+}
+.imooc-icon{
+	margin-left:10px;
+	content: url(../../resource/image/icon1.ico);
+}

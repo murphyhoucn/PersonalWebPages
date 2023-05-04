@@ -1,0 +1,41 @@
+/* 该文件是每个月的照片墙的层叠样式表文件*/
+/*月份_p.html 文件引用该CSS*/
+*{
+	margin:0;
+	padding: 0;
+}
+ 
+body{
+    /* 这里放入你的背景图片  需要加center*/
+    background: url(../../resource/image/monthphotowall_backgound.jpg) no-repeat center;
+    backdrop-filter: saturate(150%) blur(2px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat:repeat-y;
+}
+ 
+.container{
+	width: 1000px;
+	height: 450px;
+	margin:60px auto;
+	position: relative;
+}
+ 
+.container img{
+	padding: 10px 10px 15px ;
+	background:white;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+}
+ 
+.pic{
+	width: 200px;
+	margin-right: 1%;
+}
+ 
+.container>img:hover{
+	  opacity:0.6;
+}

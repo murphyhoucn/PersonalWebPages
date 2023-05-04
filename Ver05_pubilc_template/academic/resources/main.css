@@ -1,0 +1,53 @@
+html {
+  background-color: #dddddd; 
+}
+
+body { 
+  font-family:Trebuchet MS, Arial, Verdana, sans-serif;
+  font-size:18px;  
+  line-height:1.5;  
+  color: #000;
+  background-color: #FFFFFF; 
+  text-align:left; /* for IE */
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:  50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  max-width: 960px;
+}
+
+table{ background-color: #FFFFFF; }
+
+a, a:link, a:visited {
+  color: #1f82a9;
+  background:transparent text-decoration: underline;
+  cursor:pointer; background-color:underline
+}
+a:hover {
+  color: #006699;
+  background:inherit;
+  text-decoration: underline;
+}
+
+img { border: 0; }
+
+h1{ font-family:  Helvetica, sans-serif;}
+h2{ font-family:  Helvetica, sans-serif;font-size:26px;}
+h3{ font-family:  Helvetica, sans-serif;font-size:23px;}
+h4{ font-family:  Helvetica, sans-serif;font-size:20px;}
+p { font-size:15;}
+
+.papericon {
+	border-radius: 8px;	
+	-moz-box-shadow: 3px 3px 6px #888;
+	-webkit-box-shadow: 3px 3px 6px #888;
+	box-shadow: 3px 3px 6px #888;
+}
+
+.portrait{
+	border-radius: 8px;	
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>introduction</title>
+    <link rel="stylesheet" href="introduction_main.css">
+    <link rel="shortcut icon" href="./resource/image/ICO.ico" type="image/x-icon" />
+
+    <style type="text/css">
+
+    li {
+        list-style-type: none; /*去除列表符号*/
+        position: relative; /*配合子标签使用*/
+    }
+
+    img {
+        display: block; /*图片保持显示状态*/
+    }
+
+    /*设置默认属性*/
+    li:LINK {
+        background-color: #F0F8FF;
+    }
+
+    li:VISITED {
+        background-color: #0066CC;
+    }
+
+    li:HOVER {
+        background-color: #FFC1E0;
+    }
+
+    li:ACTIVE {
+        background-color: #d0d0d0;
+    }
+    /*设置关联属性*/
+    #div_02 {
+        display: none; /*初始不显示*/
+        position: absolute; /*使图片脱离流*/
+    }
+
+    #div_02 img {
+        display: block; /*一直显示*/
+    }
+
+    li:HOVER #div_02 {
+        display: block; /*当鼠标悬停时，显示图片 */
+    }
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="main_box">
+<!--    <table id="Information" width="100%" border="1">-->
+    <table id="Information" width="100%">
+        <tr>
+            <td width="800">
+                <h1>MurphyHou</h1>
+            </td>
+            <td rowspan="2" align="center"><!-- rowspan属性规定单元格可横跨的行数。-->
+                <img src="./resource/image/me_avatar_r.png" class="portrait">
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <p style="line-height:1.4">
+                    Student majoring in EE<br>
+                    Ocean University of China<br>
+                </p>
+                <ul>
+                    <li>
+                        <div id="div_01" style="font-size:30px">Wechat: MurphyHou0928</div>
+                        <div id="div_02">
+                            <img alt="wechat" src="./resource/image/wechat.jpg" />
+                        </div>
+                </ul>
+
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+    <h1 align="center">暂无内容</h1>
+</div>
+
+
+</body>
+
+</html>

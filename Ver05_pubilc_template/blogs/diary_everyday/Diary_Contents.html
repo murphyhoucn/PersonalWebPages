@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diary Contents</title>
+
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+
+    <link href="./resource/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="./resource/css/tooplate-chilling-cafe.css" rel="stylesheet" />
+  </head>
+
+  <style type="text/css">
+        a:link {
+        color:  #800080;
+        text-decoration:none;
+        }
+        a:hover {
+        color:  #0000FF;
+        text-decoration:underline;
+        }
+        a:active {
+        color:  #800080;
+        text-decoration:none;
+        }
+    </style>
+
+<body>
+
+
+
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <!-- <i class="fas fa-mug-hot fa-2x tm-page-icon"></i> -->
+        <h1 class="tm-page-header">Contents</h1>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+
+        
+
+
+        <!-- Special Items -->
+        <section class="tm-section">
+
+          <h2 class="tm-section-header">Year</h2>
+
+          <div class="tm-special-items">
+            <figure class="tm-special-item">
+              <a href="./diary_2021.html" target="_blank"><img src="./resource/img/2021.jpg" /></a>
+              <figcaption>
+                <span class="tm-item-name">Diary 2021</span>
+              </figcaption>
+            </figure>
+
+
+
+
+            <figure class="tm-special-item">
+              <a href="./diary_2022.html" target="_blank"><img src="./resource/img/2022.jpg" /></a>
+              <figcaption>
+                <span class="tm-item-name">Diary 2022</span>
+              </figcaption>
+            </figure>
+
+
+
+
+
+
+
+          </div>
+        </section>
+        <hr />
+      </div>
+
+
+
+
+
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          Copyright &copy; 2021 Murphy
+        </p>
+      </footer>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+
+
+
+  </body>
+
+</html>

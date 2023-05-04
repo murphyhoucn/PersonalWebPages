@@ -1,0 +1,164 @@
+#! ---------------------------------------------------------------
+#! Aurora Theme for Hexo
+#! ---------------------------------------------------------------
+#! Designed & Coded By TriDiamond
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#！ @docs https://aurora.tridiamond.tech/guide/configuration.html
+#! ---------------------------------------------------------------
+site:
+  subtitle: Murphy's Blog
+  author: Murphy
+  nick: CosmicDusty
+  description: A Future Without Disappointment!
+  link: '/'
+  language: cn
+  multi_language: true
+  logo: https://murhyimgur.oss-cn-beijing.aliyuncs.com/img/weblogo.png
+  avatar: https://murhyimgur.oss-cn-beijing.aliyuncs.com/img/aboutme.jpg
+  beian:
+    number: ''
+    link: ''
+  police_beian:
+    number: ''
+    link: ''
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#！ @docs https://aurora.tridiamond.tech/guide/authors.html
+#! ---------------------------------------------------------------
+authors:
+  ##! example
+  # TriDiamond:
+  #   name: TriDiamond
+  #   avatar: https://up.enterdesk.com/edpic_source/44/ff/3d/44ff3d6bd2819d524facfcc33205d4cd.jpg
+  #   link: https://github.com/TriDiamond
+  #   description: 'Think like an artist, code like an artisan.'
+  #   socials:
+  #     github: https://tridiamond.tech
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#！ @docs https://aurora.tridiamond.tech/guide/menu.html
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives: true
+  
+  CV:
+    name: 'CV'
+    path: 'https://murhyimgur.oss-cn-beijing.aliyuncs.com/attaches/houjinliang-cv.pdf'
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: true
+  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  feature: true
+  gradient:
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! @docs https://aurora.tridiamond.tech/guide/social.html
+#! ---------------------------------------------------------------
+socials:
+  github: 'https://github.com/murphyhoucn'
+  zhihu: 'https://www.zhihu.com/people/CosmicDusty'
+  stackoverflow: 'https://stackoverflow.com/users/18627097/murphy'
+  customs:
+    bilibili:
+      icon: /img/bilibili.png
+      link: https://space.bilibili.com/294812632
+
+site_meta:
+  cdn: cn
+  favicon:
+  description: 'A Future Without Disappointment!'
+  keywords: '知识,通信,编程,电子,计算机,学习,记录'
+  author: 'Murphy'
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! @docs https://aurora.tridiamond.tech/guide/plugins.html
+#! ---------------------------------------------------------------
+
+# For local development only!
+gitalk:
+  enable: false
+  autoExpand: true
+  clientID: ''
+  clientSecret: ''
+  repo: 'dev-blog-comments'
+  owner: 'TriDiamond'
+  admin: ['TriDiamond']
+  id: uid
+  language: en
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: true
+  app_id: JijHNKemeVNog4wF7g9I5TR3-gzGzoHsz
+  app_key: FvsKdxHOP2aG5rHrHby5aV0b
+  notify: false
+  avatar: 'robohash'
+  placeholder: Just go go~
+  visitor: true
+  lang: 'cn'
+  avatarForce: false
+  meta: ['nick', 'mail','links']
+  requiredFields: []
+  admin: 'Murphy'
+  recentComment: true
+  
+leancloud_visitors:
+  enable: true
+  app_id:  'JijHNKemeVNog4wF7g9I5TR3'
+  app_key: 'FvsKdxHOP2aG5rHrHby5aV0b'
+
+
+# Enable Busuanzi statistic plugin
+# see http://ibruce.info/2015/04/04/busuanzi/
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: true
+  author:
+    cn: 作者
+    en: Murphy
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Enable Aurora Bot Dia
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+aurora_bot:
+  enable: ture
+  locale: cn
+  bot_type: dia
+  tips:
+
+#! ---------------------------------------------------------------
+#! Injections
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+  css:

@@ -1,0 +1,59 @@
+*{margin:0px; padding: 0px; }
+.nav{
+    position:fixed;
+    top: 0px;
+    right:0%;
+    margin-top: 0px;
+    /*width: 30%;*/
+    width: 600px;
+
+    height:40px;
+    border: 0px;
+    background:rgba(0,0,0,.8);/*导航栏本体*/
+}
+.nav ul{
+    padding: 0px;
+}
+.nav a{
+    color: #FFF;
+    width: 150px;
+    height:40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-family: Arial;
+    font-weight: 2px;
+    font-size: 50%;
+    letter-spacing: 1px;
+}
+.nav {
+    margin:0px auto;
+}
+.nav ul li {
+    list-style: none;
+    float: left;
+}
+.nav ul li a:hover{
+    background:rgba(0,0,0,.8);/*鼠标放置在导航栏上以及下菜单上*/
+}
+.nav ul:hover{
+    display: block;
+}
+.nav ul li ul{
+    background:rgba(0,0,0,.8);
+    position: absolute;
+    display: none;
+}
+.nav ul li ul li{
+    float: none;
+    background:rgba(0,0,0,.8);
+
+}
+.nav ul li ul li a{
+    font-size: 13px;
+    font-weight: 0px;
+}
+.nav ul li:hover ul{             /*二级菜单的触发点*/
+    display: block;
+}

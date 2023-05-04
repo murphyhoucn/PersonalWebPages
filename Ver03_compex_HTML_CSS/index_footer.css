@@ -1,0 +1,15 @@
+/* 该文件是主页底部页脚的版权信息叠层样式表文件*/
+.footer {
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background:rgba(0,0,0,.8);
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
