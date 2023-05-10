@@ -1,2 +1,2 @@
 # PersonalWebPages
-the iteration and updating of my personal web pages
+the iteration and updating of my personal web pages.
